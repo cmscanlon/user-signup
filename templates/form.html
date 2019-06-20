@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <style>
+            .error { color: red; }
+        </style>
+    </head>
+    <body style="line-height:2">
+        <h1>Signup</h1>
+            <form action="/hello" method="post">
+                <label>Username
+                    <input id="username" type="text" name="username" />
+                </label> 
+                <br>   
+                <label>Password
+                    <input id="password" type="password" name="password"  />
+                </label>
+                <br>
+                <label>Verify Password
+                    <input id="verify_password" type="password" name="verify_password" />
+                </label>  
+                <br>  
+                <label>Email
+                    <input id="email" type="text" name="email" />
+                </label>
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+
+{% endblock %}
